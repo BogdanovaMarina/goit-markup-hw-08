@@ -1,0 +1,26 @@
+.flex-contacts {
+	display: flex;
+	margin-left: auto;
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+	color: $secondary-color;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+.item-contacts:not(:last-child) {
+	margin-right: 40px;
+}
+
+.icon-contact {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	fill: currentColor;
+}

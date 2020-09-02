@@ -1,0 +1,55 @@
+.footer {
+	background-color: #2f303a;
+}
+
+.footer-block:nth-child(3) {
+	display: block;
+}
+
+.footer-block .action {
+	display: flex;
+}
+
+.footer-block .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	display: inline-block;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19; /*31/26*/
+	color: $third-color;
+}
+
+.footer-street {
+	margin: 0;
+	font-style: normal;
+	font-weight: normal;
+	color: $third-color;
+}
+
+.footer-contacts {
+	font-style: normal;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.adr .footer-contacts {
+	display: block;
+	margin-top: 9px;
+	padding: 0;
+}
+.adr {
+	margin-bottom: 60px;
+}
+
+@import "./footer-soclink-sub";

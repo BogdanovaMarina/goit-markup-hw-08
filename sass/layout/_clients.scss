@@ -1,0 +1,37 @@
+.clients {
+	padding: 0 calc((100% - 1200px) / 2);
+	padding-bottom: 94px;
+}
+
+.flex-clients {
+	display: flex;
+}
+
+.logo-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 90px;
+	color: #afb1b8;
+
+	border: 1px solid #afb1b8;
+
+	border-radius: 4px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+		border-color: $accent-color;
+	}
+}
+
+.client-logo {
+	fill: currentColor;
+}
+
+.clients-item {
+	width: calc(100% - 30px * 5) / 6;
+	margin-right: 30px;
+}
