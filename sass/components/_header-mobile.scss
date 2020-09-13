@@ -1,0 +1,59 @@
+.header-mobile {
+	display: flex;
+	position: relative;
+
+	@media screen and (min-width: 767px) {
+		display: none;
+	}
+}
+
+.menu-container {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 60px;
+	text-align: center;
+	z-index: 1;
+
+	&.is-open {
+		display: block;
+	}
+}
+
+.menu-button {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+
+	padding: 0;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	align-items: center;
+
+	justify-content: center;
+
+	border: none;
+	background-color: transparent;
+}
+
+.menu-button .mobile-close {
+	display: none;
+}
+.menu-button.is-open .mobile-close {
+	display: block;
+}
+.menu-button.is-open .mobile-menu {
+	display: none;
+}
+
+.menu-button:hover .mobile-menu,
+.menu-button:hover .mobile-close,
+.menu-button:focus .mobile-menu,
+.menu-button:focus .mabile-close {
+	fill: $accent-color;
+}

@@ -27,10 +27,17 @@
 		background-color: $accent-color;
 	}
 }
+@media screen and (min-width: 1200px) {
+	.footer-block > .list {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
 
-.footer-block > .list {
-	display: flex;
-	justify-content: space-evenly;
+@media screen and(max-width:1199px) {
+	.footer-block .flex-list {
+		display: flex;
+	}
 }
 .input-footer {
 	display: inline-flex;

@@ -17,12 +17,38 @@ body {
 	color: $primary-color;
 }
 
+* {
+	outline: 1px solid rgb(201, 97, 71);
+}
+
+body .modal-open {
+	overflow: hidden;
+}
+
 .container {
-	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
+	width: 100%;
+	padding: 0 15px;
 	margin-left: auto;
 	margin-right: auto;
+	// max-width: 1200px;
+}
+
+@media (min-width: 480px) {
+	.container {
+		width: 480px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
 }
 
 html {
@@ -33,6 +59,7 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
+	outline: 1 px solid red;
 }
 a {
 	text-decoration: none;
@@ -40,9 +67,11 @@ a {
 
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 .list {
+	list-style: none;
 	padding: 0;
 	margin: 0;
-	list-style: none;
 }

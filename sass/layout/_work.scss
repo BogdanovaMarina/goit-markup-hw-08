@@ -2,9 +2,18 @@
 	display: block;
 	padding: 0 calc((100% - 1200px) / 2);
 	padding-bottom: 94px;
+
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 }
 
 .primary-title {
+	@media (max-width: 1199px) {
+		font-size: 28px;
+		line-height: 1.17;
+		margin-bottom: 30px;
+	}
 	margin-top: 0;
 	margin-bottom: 50px;
 

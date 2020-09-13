@@ -1,7 +1,9 @@
 @import "./base/fonts";
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/normalize";
 @import "./base/common";
+@import "./components/header-mobile";
 @import "./components/header-logo";
 @import "./components/header-nav";
 @import "./components/header-contacts";
@@ -14,3 +16,5 @@
 @import "./components/social-link";
 @import "./layout/clients";
 @import "./layout/footer-adr";
+
+// остановилась на31 минуте

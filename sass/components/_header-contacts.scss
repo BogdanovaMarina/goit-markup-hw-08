@@ -1,6 +1,8 @@
 .flex-contacts {
-	display: flex;
 	margin-left: auto;
+	@media screen and(min-width:1200px) {
+		display: flex;
+	}
 }
 
 .contacts {
@@ -15,7 +17,13 @@
 	}
 }
 .item-contacts:not(:last-child) {
-	margin-right: 40px;
+	@media screen and(max-width:1199px) {
+		margin-bottom: 10px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 40px;
+	}
 }
 
 .icon-contact {

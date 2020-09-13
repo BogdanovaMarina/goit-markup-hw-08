@@ -1,11 +1,30 @@
 .logo {
-	margin-right: 85px;
+	display: flex;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	// margin-right: 85px;
 
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19; /*31/26*/
+	font-size: 24px;
+	line-height: 1.16; /*28/24*/
 	color: #000000;
+	letter-spacing: 0.03em;
+
+	@include for-size(tablet) {
+		padding-top: 26px;
+		padding-bottom: 26px;
+		margin-right: 88px;
+	}
+
+	@include for-size(desktop) {
+		font-size: 26px;
+		line-height: 1.19;
+
+		padding-top: 24px;
+		padding-bottom: 25px;
+		margin-right: 93px;
+	}
 }
 
 .logo-accent {
@@ -14,7 +33,12 @@
 header {
 	border-bottom: 1px solid #ececec;
 }
+
 .flex-header {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
 	display: flex;
 	align-items: center;
 }
