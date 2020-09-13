@@ -396,10 +396,6 @@ body {
   color: #212121;
 }
 
-* {
-  outline: 1px solid #c96147;
-}
-
 body .modal-open {
   overflow: hidden;
 }
