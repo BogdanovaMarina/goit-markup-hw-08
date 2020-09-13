@@ -16,13 +16,14 @@
 
 .flex-list {
 	display: flex;
+	justify-content: center;
 }
 
-.footer-block1 {
+.footer-block {
 	margin-bottom: 60px;
-}
-.footer-block2 {
-	margin-bottom: 60px;
+	@media screen and (min-width: 768px) {
+		width: 50%;
+	}
 }
 
 .flex-footer {
@@ -30,6 +31,9 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+	}
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
 	}
 }
 

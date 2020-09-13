@@ -1,7 +1,7 @@
 .action {
 	// margin-top: 72px;
 	// margin-bottom: 20px;
-
+	// justify-content: center;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -30,7 +30,7 @@
 
 .input-footer {
 	display: inline-flex;
-	width: 358px;
+	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 12px;
@@ -40,4 +40,8 @@
 	color: $secondary-color;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.3);
+
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+	}
 }
