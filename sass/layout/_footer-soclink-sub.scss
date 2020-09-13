@@ -1,6 +1,6 @@
 .action {
-	margin-top: 72px;
-	margin-bottom: 20px;
+	// margin-top: 72px;
+	// margin-bottom: 20px;
 
 	font-weight: 700;
 	font-size: 14px;
@@ -9,9 +9,9 @@
 	color: $third-color;
 }
 
-.link-footer:not(:last-child) {
-	margin-right: 10px;
-}
+// .link-footer:not(:last-child) {
+// 	margin-right: 10px;
+// }
 
 .item-link {
 	display: inline-flex;
@@ -27,18 +27,7 @@
 		background-color: $accent-color;
 	}
 }
-@media screen and (min-width: 1200px) {
-	.footer-block > .list {
-		display: flex;
-		justify-content: space-evenly;
-	}
-}
 
-@media screen and(max-width:1199px) {
-	.footer-block .flex-list {
-		display: flex;
-	}
-}
 .input-footer {
 	display: inline-flex;
 	width: 358px;

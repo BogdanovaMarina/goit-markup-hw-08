@@ -1,61 +1,22 @@
 .footer {
-	padding-bottom: 60px;
-	background-color: #2f303a;
-}
+	margin-right: auto;
+	margin-left: auto;
 
-.footer-block:nth-child(3) {
-	display: block;
-}
+	text-align: center;
+	padding: 60px 0px;
 
-.footer-block .action {
-	display: flex;
-}
-
-.footer-block .container {
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-block {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 60px;
-
-	&:nth-child(3n) {
-		width: 100%;
+	@media screen and (min-width: 768px) {
 	}
 
-	@include for-size(tablet) {
-		display: inline-flex;
-		flex-wrap: wrap;
-		width: calc((100% - 5px) / 2);
-		// justify-content: space-between;
-	}
-
-	@include for-size(desktop) {
-		align-items: baseline;
-		width: calc((50% - 10px) / 2);
-		&:nth-child(3n) {
-			width: calc(50% - 15px);
-		}
-	}
-}
-
-.flex-footer {
-	@media scree and (max-width: 767px) {
-		display: flex;
-		justify-content: space-between;
-	}
 	@media screen and (min-width: 1200px) {
-		display: flex;
-		justify-content: space-between;
+		text-align: left;
 	}
+	background-color: #2f303a;
 }
 
 .footer-logo {
 	display: inline-block;
-	margin-top: 60px;
+	// margin-top: 60px;
 	margin-bottom: 20px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -81,8 +42,8 @@
 	margin-top: 9px;
 	padding: 0;
 }
-.adr {
-	margin-bottom: 60px;
-}
+// .adr {
+// 	// margin-bottom: 60px;
+// }
 
 @import "./footer-soclink-sub";
