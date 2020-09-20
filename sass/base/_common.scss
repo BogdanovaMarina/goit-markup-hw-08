@@ -17,10 +17,6 @@ body {
 	color: $primary-color;
 }
 
-// * {
-// 	outline: 1px solid rgb(201, 97, 71);
-// }
-
 body .modal-open {
 	overflow: hidden;
 }
@@ -59,7 +55,6 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
-	outline: 1 px solid red;
 }
 a {
 	text-decoration: none;

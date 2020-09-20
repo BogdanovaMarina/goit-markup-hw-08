@@ -435,7 +435,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  outline: 1 px solid red;
 }
 
 a {
@@ -1354,7 +1353,6 @@ header {
 }
 
 .clients {
-  outline: 1px solid red;
   padding-bottom: 60px;
 }
 
@@ -1465,6 +1463,16 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    margin-bottom: 0;
+  }
+}
+
+.footer-block:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .flex-footer {
     display: -webkit-box;
@@ -1524,6 +1532,11 @@ header {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.link-footer:not(:last-child) {
+  margin-right: 10px;
 }
 
 .item-link {
@@ -1559,6 +1572,7 @@ header {
   color: #757575;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
